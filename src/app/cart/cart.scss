@@ -44,9 +44,10 @@
 /* Layout */
 .cart-layout {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: minmax(0, 1fr) 340px;
   gap: 2.5rem;
   align-items: start;
+  min-width: 0;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -56,7 +57,7 @@
 /* Table head */
 .cart-table-head {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 1rem;
   padding: 0 1rem .75rem;
   font-size: .6875rem;
@@ -72,7 +73,7 @@
 /* Cart row */
 .cart-row {
   display: grid;
-  grid-template-columns: 1fr 120px 80px;
+  grid-template-columns: minmax(0, 1fr) 120px 80px;
   gap: 1rem;
   align-items: center;
   padding: 1.25rem 1rem;

@@ -34,7 +34,6 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  overflow-x: clip;
 }
 
 body {
@@ -44,7 +43,6 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: clip;
   width: 100%;
   min-width: 0;
 }
@@ -60,12 +58,15 @@ ul, ol { list-style: none; }
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: clamp(1rem, 4vw, 3.5rem);
+  box-sizing: border-box;
 }
 
 .page-content {
   min-height: calc(100vh - 118px); /* navbar height */
   padding-top: 1.5rem;
-  overflow-x: clip;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 /* ─── Focus ring (a11y) ────────────────────────────────────── */
