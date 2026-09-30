@@ -31,7 +31,11 @@
 /* ─── Reset & Base ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { font-size: 16px; scroll-behavior: smooth; }
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -40,10 +44,13 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  width: 100%;
+  min-width: 0;
 }
 
 a { text-decoration: none; color: inherit; cursor: pointer; }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 button { cursor: pointer; font-family: inherit; }
 ul, ol { list-style: none; }
 
@@ -52,12 +59,13 @@ ul, ol { list-style: none; }
   width: 100%;
   max-width: 1280px;
   margin-inline: auto;
-  padding-inline: clamp(1rem, 5%, 5rem);
+  padding-inline: clamp(1rem, 4vw, 3.5rem);
 }
 
 .page-content {
   min-height: calc(100vh - 118px); /* navbar height */
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  overflow-x: clip;
 }
 
 /* ─── Focus ring (a11y) ────────────────────────────────────── */
@@ -74,6 +82,7 @@ ul, ol { list-style: none; }
   justify-content: center;
   gap: .5rem;
   padding: .75rem 1.5rem;
+  min-height: 44px;
   background: var(--action);
   color: #fff;
   font-size: .9375rem;
@@ -98,6 +107,7 @@ ul, ol { list-style: none; }
   justify-content: center;
   gap: .5rem;
   padding: .75rem 1.5rem;
+  min-height: 44px;
   background: var(--surface);
   color: var(--ink);
   font-size: .9375rem;
@@ -117,8 +127,10 @@ ul, ol { list-style: none; }
 .btn-ghost {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: .4rem;
   padding: .5rem .875rem;
+  min-height: 44px;
   background: transparent;
   border: none;
   border-radius: var(--radius-sm);
@@ -171,6 +183,7 @@ ul, ol { list-style: none; }
 
 .form-control {
   width: 100%;
+  min-height: 44px;
   padding: .75rem 1rem;
   border: 1.5px solid var(--border);
   border-radius: var(--radius-md);
@@ -179,6 +192,11 @@ ul, ol { list-style: none; }
   color: var(--ink);
   font-family: inherit;
   transition: border-color .2s, box-shadow .2s;
+
+  @media (max-width: 768px) {
+    font-size: 1rem; /* Prevents iOS auto-zoom on form inputs */
+    min-height: 48px;
+  }
 
   &::placeholder { color: var(--muted); }
 

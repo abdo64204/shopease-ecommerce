@@ -1,5 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { filter } from 'rxjs';
 import { AuthService } from '../service/auth';
 import { CartService } from '../service/cart';
 
@@ -10,6 +11,7 @@ import { CartService } from '../service/cart';
   templateUrl: './navbar.html',
 })
 export class Navbar {
+  private readonly router = inject(Router);
   private readonly authService = inject(AuthService);
   private readonly cartService = inject(CartService);
 
@@ -18,6 +20,14 @@ export class Navbar {
   readonly cartCount = this.cartService.cartCount;
 
   mobileMenuOpen = signal(false);
+
+  constructor() {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.closeMobileMenu();
+      });
+  }
 
   toggleMobileMenu() {
     this.mobileMenuOpen.update(v => !v);
