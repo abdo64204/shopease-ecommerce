@@ -1,0 +1,45 @@
+<article class="product-card card" [attr.aria-label]="product().title">
+  <!-- Image area -->
+  <a [routerLink]="['/products', product().id]" class="product-card-img-wrap" tabindex="-1" aria-hidden="true">
+    <div class="product-card-img-bg">
+      @if (product().discountPercentage && product().discountPercentage >= 10) {
+        <span class="badge badge-coral product-badge">-{{ product().discountPercentage | number:'1.0-0' }}%</span>
+      }
+      <img
+        [src]="product().thumbnail || product().images?.[0]"
+        [alt]="product().title"
+        class="product-img"
+        loading="lazy"
+      />
+    </div>
+  </a>
+
+  <!-- Info -->
+  <div class="product-card-body">
+    <a [routerLink]="['/products', product().id]" class="product-title-link">
+      <h3 class="product-title">{{ product().title }}</h3>
+    </a>
+
+    <div class="product-meta">
+      <span class="product-category">{{ product().category }}</span>
+      @if (product().rating) {
+        <span class="product-rating" aria-label="Rating: {{ product().rating | number:'1.1-1' }} out of 5">
+          <span class="stars" aria-hidden="true">{{ getStars(product().rating) }}</span>
+          <span class="rating-val">{{ product().rating | number:'1.1-1' }}</span>
+        </span>
+      }
+    </div>
+
+    <div class="product-footer">
+      <span class="product-price">\${{ product().price | number:'1.2-2' }}</span>
+      <button
+        class="add-to-cart-btn"
+        (click)="addToCart()"
+        [attr.aria-label]="'Add ' + product().title + ' to cart'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</article>

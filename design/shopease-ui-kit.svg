@@ -1,0 +1,539 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3200" height="2260" viewBox="0 0 3200 2260">
+<defs><linearGradient id="phoneGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8ccff"/><stop offset="1" stop-color="#456cff"/></linearGradient><linearGradient id="heroGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#172554"/><stop offset="1" stop-color="#293d80"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#243356" flood-opacity=".09"/></filter></defs>
+<rect width="3200" height="2260" fill="#f1f3f8"/>
+<text x="80" y="76" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="750" fill="#315efb" text-anchor="start">SHOPEASE  /  E-COMMERCE UI KIT</text>
+<text x="80" y="139" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="750" fill="#172554" text-anchor="start">A cleaner way to shop tech.</text>
+<text x="80" y="177" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="450" fill="#748198" text-anchor="start">Desktop page designs · shared components · responsive direction</text>
+<rect x="2340" y="66" width="780" height="118" rx="20" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="2380" y="104" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#748198" text-anchor="start">DESIGN TOKENS</text>
+<rect x="2380" y="119" width="28" height="28" rx="9" fill="#172554" stroke="#e7ebf2" stroke-width="1"/>
+<text x="2418" y="138" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Ink</text>
+<rect x="2525" y="119" width="28" height="28" rx="9" fill="#315efb" stroke="#e7ebf2" stroke-width="1"/>
+<text x="2563" y="138" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Action</text>
+<rect x="2670" y="119" width="28" height="28" rx="9" fill="#f8f9fc" stroke="#e7ebf2" stroke-width="1"/>
+<text x="2708" y="138" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Canvas</text>
+<rect x="2815" y="119" width="28" height="28" rx="9" fill="#16a98a" stroke="#e7ebf2" stroke-width="1"/>
+<text x="2853" y="138" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Mint</text>
+<rect x="2960" y="119" width="28" height="28" rx="9" fill="#ff8067" stroke="#e7ebf2" stroke-width="1"/>
+<text x="2998" y="138" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Coral</text>
+<text x="80" y="233" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="750" fill="#315efb" text-anchor="start">01  HOME</text>
+<text x="80" y="253" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="start">01 · Home</text>
+<text x="800" y="253" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#748198" text-anchor="end">1440 × 960 · Desktop</text>
+<g transform="translate(80,278) scale(.5)">
+<rect x="0" y="0" width="1440" height="960" rx="0" fill="#f8f9fc" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1440" height="34" rx="0" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="720" y="23" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#e8edff" text-anchor="middle">Free delivery on orders over $100  ·  Easy 30-day returns</text>
+<rect x="0" y="34" width="1440" height="84" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<path d="M88 77l13-25 13 25h-9l-4-8-4 8z" fill="#315efb"/>
+<text x="124" y="81" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#172554" text-anchor="start">shopeEase</text>
+<text x="437" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="650" fill="#315efb" text-anchor="start">Home</text>
+<text x="531" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">Products</text>
+<text x="646" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">About</text>
+<rect x="766" y="54" width="290" height="46" rx="13" fill="#f5f7fb" stroke="none" stroke-width="1"/>
+<text x="789" y="83" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search products...</text>
+<text x="1121" y="83" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="400" fill="#34415d" text-anchor="start">♡</text>
+<text x="1177" y="83" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="400" fill="#34415d" text-anchor="start">♧</text>
+<rect x="1203" y="50" width="1" height="52" rx="0" fill="#e7ebf2" stroke="none" stroke-width="1"/>
+<circle cx="1250" cy="76" r="20" fill="#eef2ff"/><text x="1250" y="82" font-family="Arial" font-size="15" font-weight="700" fill="#315efb" text-anchor="middle">A</text>
+<text x="1282" y="74" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">Alex Morgan</text>
+<text x="1282" y="91" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#78849a" text-anchor="start">My account</text>
+<path d="M0 118H1440" stroke="#e7ebf2" stroke-width="1"/>
+<rect x="0" y="118" width="1440" height="470" rx="0" fill="url(#heroGlow)" stroke="none" stroke-width="1"/>
+<rect x="92" y="166" width="148" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="166.0" y="185" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">NEW SEASON · 2026</text>
+<text x="92" y="247" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="750" fill="#ffffff" text-anchor="start">Technology that</text>
+<text x="92" y="305" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="750" fill="#ffffff" text-anchor="start">moves with you.</text>
+<text x="92" y="349" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="450" fill="#dbe3ff" text-anchor="start">Thoughtful picks for work, play, and everything in between.</text>
+<rect x="92" y="390" width="174" height="46" rx="12" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="179.0" y="419" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#ffffff" text-anchor="middle">Shop the collection</text>
+<text x="92" y="506" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#dbe3ff" text-anchor="start">Free shipping  ·  Secure checkout  ·  30-day returns</text>
+<rect x="1038" y="163" width="294" height="372" rx="26" fill="#344c94" stroke="none" stroke-width="1"/>
+<rect x="1120" y="189" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="1126" y="195" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="1165" y="201" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="1184" cy="298" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="1184" cy="298" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M1137 342 Q1180 297 1231 257 L1231 378 L1137 378Z" fill="#ff8d6a" fill-opacity=".9"/>
+<rect x="1137" y="481" width="96" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="1185.0" y="500" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#172554" text-anchor="middle">SAVE 15%</text>
+<text x="92" y="652" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#172554" text-anchor="start">Shop by category</text>
+<text x="1338" y="650" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#315efb" text-anchor="end">Browse all  →</text>
+<rect x="92" y="678" width="292" height="102" rx="16" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="109" y="697" width="62" height="62" rx="16" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="140" y="738" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#315efb" text-anchor="middle">▯</text>
+<text x="188" y="722" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">Phones</text>
+<text x="188" y="746" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Latest releases</text>
+<rect x="408" y="678" width="292" height="102" rx="16" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="425" y="697" width="62" height="62" rx="16" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="456" y="738" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#315efb" text-anchor="middle">◖</text>
+<text x="504" y="722" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">Audio</text>
+<text x="504" y="746" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Hear every detail</text>
+<rect x="724" y="678" width="292" height="102" rx="16" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="741" y="697" width="62" height="62" rx="16" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="772" y="738" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#315efb" text-anchor="middle">◷</text>
+<text x="820" y="722" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">Wearables</text>
+<text x="820" y="746" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Made for movement</text>
+<rect x="1040" y="678" width="292" height="102" rx="16" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="1057" y="697" width="62" height="62" rx="16" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="1088" y="738" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#315efb" text-anchor="middle">✳</text>
+<text x="1136" y="722" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">Accessories</text>
+<text x="1136" y="746" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Small things, big help</text>
+<rect x="92" y="817" width="1248" height="74" rx="16" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<text x="122" y="862" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#172554" text-anchor="start">✓  Free delivery</text>
+<text x="443" y="862" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#172554" text-anchor="start">↺  Easy returns</text>
+<text x="750" y="862" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#172554" text-anchor="start">⌑  Secure checkout</text>
+<text x="1064" y="862" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#172554" text-anchor="start">✦  2-year warranty</text>
+</g>
+<text x="1140" y="253" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="start">02 · Products</text>
+<text x="1860" y="253" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#748198" text-anchor="end">1440 × 960 · Desktop</text>
+<g transform="translate(1140,278) scale(.5)">
+<rect x="0" y="0" width="1440" height="960" rx="0" fill="#f8f9fc" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1440" height="34" rx="0" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="720" y="23" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#e8edff" text-anchor="middle">Free delivery on orders over $100  ·  Easy 30-day returns</text>
+<rect x="0" y="34" width="1440" height="84" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<path d="M88 77l13-25 13 25h-9l-4-8-4 8z" fill="#315efb"/>
+<text x="124" y="81" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#172554" text-anchor="start">shopeEase</text>
+<text x="437" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="650" fill="#315efb" text-anchor="start">Home</text>
+<text x="531" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">Products</text>
+<text x="646" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">About</text>
+<rect x="766" y="54" width="290" height="46" rx="13" fill="#f5f7fb" stroke="none" stroke-width="1"/>
+<text x="789" y="83" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search products...</text>
+<text x="1121" y="83" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="400" fill="#34415d" text-anchor="start">♡</text>
+<text x="1177" y="83" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="400" fill="#34415d" text-anchor="start">♧</text>
+<rect x="1203" y="50" width="1" height="52" rx="0" fill="#e7ebf2" stroke="none" stroke-width="1"/>
+<circle cx="1250" cy="76" r="20" fill="#eef2ff"/><text x="1250" y="82" font-family="Arial" font-size="15" font-weight="700" fill="#315efb" text-anchor="middle">A</text>
+<text x="1282" y="74" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">Alex Morgan</text>
+<text x="1282" y="91" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#78849a" text-anchor="start">My account</text>
+<path d="M0 118H1440" stroke="#e7ebf2" stroke-width="1"/>
+<text x="92" y="181" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="750" fill="#172554" text-anchor="start">All products</text>
+<text x="92" y="210" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">Find the right tech for your everyday.</text>
+<rect x="92" y="237" width="1248" height="58" rx="14" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="117" y="273" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search by product name, brand, or category</text>
+<rect x="92" y="322" width="104" height="28" rx="14" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="144.0" y="341" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#ffffff" text-anchor="middle">All (128)</text>
+<rect x="209" y="322" width="133" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="275.5" y="341" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">Phones · 34</text>
+<rect x="359" y="322" width="126" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="422.0" y="341" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">Audio · 28</text>
+<rect x="509" y="322" width="151" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="584.5" y="341" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">Wearables · 22</text>
+<rect x="659" y="322" width="165" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="741.5" y="341" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">Accessories · 44</text>
+<text x="92" y="396" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#78849a" text-anchor="start">128 products</text>
+<text x="1338" y="396" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="550" fill="#44516b" text-anchor="end">Sort by   Recommended  ⌄</text>
+<rect x="92" y="425" width="280" height="342" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="104" y="437" width="256" height="183" rx="14" fill="#f3f6fb" stroke="none" stroke-width="1"/>
+<rect x="114" y="447" width="91" height="28" rx="14" fill="#eaf0ff" stroke="none" stroke-width="1"/>
+<text x="159.5" y="466" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">BESTSELLER</text>
+<rect x="178" y="457" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="184" y="463" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="223" y="469" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="242" cy="566" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="242" cy="566" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M195 610 Q238 565 289 525 L289 646 L195 646Z" fill="#ff8d6a" fill-opacity=".9"/>
+<text x="112" y="652" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">iPhone 16 Pro</text>
+<text x="112" y="676" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Electronics  ·  ★ 4.8</text>
+<text x="112" y="717" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#172554" text-anchor="start">$999</text>
+<rect x="292" y="691" width="54" height="54" rx="16" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="319" y="726" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#fff" text-anchor="middle">+</text>
+<rect x="390" y="425" width="280" height="342" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="402" y="437" width="256" height="183" rx="14" fill="#f3f6fb" stroke="none" stroke-width="1"/>
+<rect x="412" y="447" width="91" height="28" rx="14" fill="#eaf0ff" stroke="none" stroke-width="1"/>
+<text x="457.5" y="466" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">TOP RATED</text>
+<path d="M504 585V563a58 58 0 0 1 116 0v22" fill="none" stroke="#25345b" stroke-width="17" stroke-linecap="round"/>
+<rect x="496" y="573" width="34" height="72" rx="15" fill="#315efb" stroke="none" stroke-width="1"/>
+<rect x="595" y="573" width="34" height="72" rx="15" fill="#315efb" stroke="none" stroke-width="1"/>
+<rect x="504" y="580" width="17" height="48" rx="8" fill="#9fb3ff" stroke="none" stroke-width="1"/>
+<rect x="603" y="580" width="17" height="48" rx="8" fill="#9fb3ff" stroke="none" stroke-width="1"/>
+<text x="410" y="652" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">Studio Headphones</text>
+<text x="410" y="676" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Electronics  ·  ★ 4.8</text>
+<text x="410" y="717" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#172554" text-anchor="start">$249</text>
+<rect x="590" y="691" width="54" height="54" rx="16" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="617" y="726" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#fff" text-anchor="middle">+</text>
+<rect x="688" y="425" width="280" height="342" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="700" y="437" width="256" height="183" rx="14" fill="#f3f6fb" stroke="none" stroke-width="1"/>
+<rect x="710" y="447" width="91" height="28" rx="14" fill="#eaf0ff" stroke="none" stroke-width="1"/>
+<text x="755.5" y="466" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">−20% TODAY</text>
+<rect x="774" y="457" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="780" y="463" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="819" y="469" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="838" cy="566" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="838" cy="566" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M791 610 Q834 565 885 525 L885 646 L791 646Z" fill="#ff8d6a" fill-opacity=".9"/>
+<text x="708" y="652" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">iPhone 15</text>
+<text x="708" y="676" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Electronics  ·  ★ 4.8</text>
+<text x="708" y="717" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#172554" text-anchor="start">$799</text>
+<rect x="888" y="691" width="54" height="54" rx="16" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="915" y="726" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#fff" text-anchor="middle">+</text>
+<rect x="986" y="425" width="280" height="342" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="998" y="437" width="256" height="183" rx="14" fill="#f3f6fb" stroke="none" stroke-width="1"/>
+<rect x="1008" y="447" width="91" height="28" rx="14" fill="#eaf0ff" stroke="none" stroke-width="1"/>
+<text x="1053.5" y="466" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">NEW</text>
+<path d="M1100 585V563a58 58 0 0 1 116 0v22" fill="none" stroke="#25345b" stroke-width="17" stroke-linecap="round"/>
+<rect x="1092" y="573" width="34" height="72" rx="15" fill="#315efb" stroke="none" stroke-width="1"/>
+<rect x="1191" y="573" width="34" height="72" rx="15" fill="#315efb" stroke="none" stroke-width="1"/>
+<rect x="1100" y="580" width="17" height="48" rx="8" fill="#9fb3ff" stroke="none" stroke-width="1"/>
+<rect x="1199" y="580" width="17" height="48" rx="8" fill="#9fb3ff" stroke="none" stroke-width="1"/>
+<text x="1006" y="652" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">Everyday Earbuds</text>
+<text x="1006" y="676" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Electronics  ·  ★ 4.8</text>
+<text x="1006" y="717" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#172554" text-anchor="start">$129</text>
+<rect x="1186" y="691" width="54" height="54" rx="16" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="1213" y="726" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#fff" text-anchor="middle">+</text>
+<text x="92" y="808" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Showing 1–4 of 128 products</text>
+<rect x="1128" y="782" width="32" height="32" rx="9" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="1144" y="803" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#56627a" text-anchor="middle">‹</text>
+<rect x="1166" y="782" width="32" height="32" rx="9" fill="#315efb" stroke="#e5eaf2" stroke-width="1"/>
+<text x="1182" y="803" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="1204" y="782" width="32" height="32" rx="9" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="1220" y="803" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#56627a" text-anchor="middle">2</text>
+<rect x="1242" y="782" width="32" height="32" rx="9" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="1258" y="803" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#56627a" text-anchor="middle">3</text>
+<rect x="1280" y="782" width="32" height="32" rx="9" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="1296" y="803" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#56627a" text-anchor="middle">…</text>
+<rect x="1318" y="782" width="32" height="32" rx="9" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="1334" y="803" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#56627a" text-anchor="middle">32</text>
+<rect x="1356" y="782" width="32" height="32" rx="9" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="1372" y="803" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#56627a" text-anchor="middle">›</text>
+</g>
+<text x="2200" y="253" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="start">03 · Product details</text>
+<text x="2920" y="253" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#748198" text-anchor="end">1440 × 960 · Desktop</text>
+<g transform="translate(2200,278) scale(.5)">
+<rect x="0" y="0" width="1440" height="960" rx="0" fill="#f8f9fc" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1440" height="34" rx="0" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="720" y="23" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#e8edff" text-anchor="middle">Free delivery on orders over $100  ·  Easy 30-day returns</text>
+<rect x="0" y="34" width="1440" height="84" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<path d="M88 77l13-25 13 25h-9l-4-8-4 8z" fill="#315efb"/>
+<text x="124" y="81" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#172554" text-anchor="start">shopeEase</text>
+<text x="437" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="650" fill="#315efb" text-anchor="start">Home</text>
+<text x="531" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">Products</text>
+<text x="646" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">About</text>
+<rect x="766" y="54" width="290" height="46" rx="13" fill="#f5f7fb" stroke="none" stroke-width="1"/>
+<text x="789" y="83" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search products...</text>
+<text x="1121" y="83" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="400" fill="#34415d" text-anchor="start">♡</text>
+<text x="1177" y="83" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="400" fill="#34415d" text-anchor="start">♧</text>
+<rect x="1203" y="50" width="1" height="52" rx="0" fill="#e7ebf2" stroke="none" stroke-width="1"/>
+<circle cx="1250" cy="76" r="20" fill="#eef2ff"/><text x="1250" y="82" font-family="Arial" font-size="15" font-weight="700" fill="#315efb" text-anchor="middle">A</text>
+<text x="1282" y="74" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">Alex Morgan</text>
+<text x="1282" y="91" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#78849a" text-anchor="start">My account</text>
+<path d="M0 118H1440" stroke="#e7ebf2" stroke-width="1"/>
+<text x="92" y="163" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Products  /  Phones  /  iPhone 16 Pro</text>
+<rect x="92" y="190" width="636" height="570" rx="22" fill="#f1f4fa" stroke="none" stroke-width="1"/>
+<rect x="324" y="250" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="330" y="256" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="369" y="262" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="388" cy="359" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="388" cy="359" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M341 403 Q384 358 435 318 L435 439 L341 439Z" fill="#ff8d6a" fill-opacity=".9"/>
+<rect x="92" y="778" width="78" height="66" rx="12" fill="#edf2ff" stroke="#dce4f4" stroke-width="2"/>
+<rect x="154" y="789" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="160" y="795" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="199" y="801" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="218" cy="898" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="218" cy="898" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M171 942 Q214 897 265 857 L265 978 L171 978Z" fill="#ff8d6a" fill-opacity=".9"/>
+<rect x="184" y="778" width="78" height="66" rx="12" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="246" y="789" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="252" y="795" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="291" y="801" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="310" cy="898" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="310" cy="898" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M263 942 Q306 897 357 857 L357 978 L263 978Z" fill="#ff8d6a" fill-opacity=".9"/>
+<rect x="276" y="778" width="78" height="66" rx="12" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="338" y="789" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="344" y="795" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="383" y="801" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="402" cy="898" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="402" cy="898" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M355 942 Q398 897 449 857 L449 978 L355 978Z" fill="#ff8d6a" fill-opacity=".9"/>
+<rect x="368" y="778" width="78" height="66" rx="12" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="430" y="789" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="436" y="795" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="475" y="801" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="494" cy="898" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="494" cy="898" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M447 942 Q490 897 541 857 L541 978 L447 978Z" fill="#ff8d6a" fill-opacity=".9"/>
+<rect x="774" y="201" width="110" height="28" rx="14" fill="#eaf0ff" stroke="none" stroke-width="1"/>
+<text x="829.0" y="220" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">BESTSELLER</text>
+<text x="774" y="263" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#315efb" text-anchor="start">Apple</text>
+<text x="774" y="307" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="750" fill="#172554" text-anchor="start">iPhone 16 Pro</text>
+<text x="774" y="337" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="450" fill="#78849a" text-anchor="start">Built for Apple Intelligence.</text>
+<text x="774" y="383" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#f2a23a" text-anchor="start">★★★★★</text>
+<text x="870" y="383" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#78849a" text-anchor="start">4.9  ·  284 reviews</text>
+<text x="774" y="438" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="750" fill="#172554" text-anchor="start">$999</text>
+<text x="884" y="436" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="450" fill="#97a1b2" text-anchor="start">$1,099</text>
+<path d="M883 431H934" stroke="#97a1b2" stroke-width="1"/>
+<text x="774" y="483" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#34415d" text-anchor="start">Choose a finish</text>
+<circle cx="790" cy="520" r="13" fill="#20242d" stroke="#315efb" stroke-width="3"/>
+<circle cx="835" cy="520" r="13" fill="#d8d1c2" stroke="#d6dce7" stroke-width="1"/>
+<circle cx="880" cy="520" r="13" fill="#dbe2ea" stroke="#d6dce7" stroke-width="1"/>
+<circle cx="925" cy="520" r="13" fill="#9a4d3f" stroke="#d6dce7" stroke-width="1"/>
+<text x="774" y="567" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#34415d" text-anchor="start">Storage</text>
+<rect x="774" y="584" width="98" height="28" rx="14" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="823.0" y="603" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">128 GB</text>
+<rect x="884" y="584" width="98" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="933.0" y="603" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">256 GB</text>
+<rect x="994" y="584" width="98" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="1043.0" y="603" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">512 GB</text>
+<rect x="774" y="635" width="284" height="46" rx="12" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="916.0" y="664" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#ffffff" text-anchor="middle">Add to cart</text>
+<rect x="1072" y="635" width="62" height="46" rx="12" fill="#ffffff" stroke="#dfe5ef" stroke-width="1"/>
+<text x="1103.0" y="664" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#263450" text-anchor="middle">♡</text>
+<text x="774" y="714" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#16856f" text-anchor="start">✓  In stock and ready to ship</text>
+<text x="774" y="746" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#78849a" text-anchor="start">✓  Free delivery by Thursday</text>
+<path d="M774 779H1338" stroke="#e7ebf2" stroke-width="1"/>
+<text x="774" y="816" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#172554" text-anchor="start">Product highlights</text>
+<text x="774" y="849" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#78849a" text-anchor="start">A18 Pro chip  ·  48 MP camera  ·  Titanium design</text>
+</g>
+<text x="80" y="978" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="start">04 · Shopping cart</text>
+<text x="800" y="978" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#748198" text-anchor="end">1440 × 960 · Desktop</text>
+<g transform="translate(80,1003) scale(.5)">
+<rect x="0" y="0" width="1440" height="960" rx="0" fill="#f8f9fc" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1440" height="34" rx="0" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="720" y="23" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#e8edff" text-anchor="middle">Free delivery on orders over $100  ·  Easy 30-day returns</text>
+<rect x="0" y="34" width="1440" height="84" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<path d="M88 77l13-25 13 25h-9l-4-8-4 8z" fill="#315efb"/>
+<text x="124" y="81" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#172554" text-anchor="start">shopeEase</text>
+<text x="437" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="650" fill="#315efb" text-anchor="start">Home</text>
+<text x="531" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">Products</text>
+<text x="646" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">About</text>
+<rect x="766" y="54" width="290" height="46" rx="13" fill="#f5f7fb" stroke="none" stroke-width="1"/>
+<text x="789" y="83" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search products...</text>
+<text x="1121" y="83" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="400" fill="#34415d" text-anchor="start">♡</text>
+<text x="1177" y="83" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="400" fill="#34415d" text-anchor="start">♧</text>
+<rect x="1203" y="50" width="1" height="52" rx="0" fill="#e7ebf2" stroke="none" stroke-width="1"/>
+<circle cx="1250" cy="76" r="20" fill="#eef2ff"/><text x="1250" y="82" font-family="Arial" font-size="15" font-weight="700" fill="#315efb" text-anchor="middle">A</text>
+<text x="1282" y="74" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">Alex Morgan</text>
+<text x="1282" y="91" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#78849a" text-anchor="start">My account</text>
+<path d="M0 118H1440" stroke="#e7ebf2" stroke-width="1"/>
+<text x="92" y="171" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="750" fill="#172554" text-anchor="start">Your cart</text>
+<text x="92" y="200" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">You have 2 items in your bag</text>
+<text x="92" y="254" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#98a1b1" text-anchor="start">PRODUCT</text>
+<text x="697" y="254" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#98a1b1" text-anchor="middle">QUANTITY</text>
+<text x="966" y="254" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#98a1b1" text-anchor="end">PRICE</text>
+<path d="M92 270H990" stroke="#e7ebf2" stroke-width="1"/>
+<rect x="92" y="292" width="898" height="182" rx="16" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="110" y="309" width="145" height="148" rx="13" fill="#f3f6fb" stroke="none" stroke-width="1"/>
+<rect x="181" y="319" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="187" y="325" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="226" y="331" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="245" cy="428" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="245" cy="428" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M198 472 Q241 427 292 387 L292 508 L198 508Z" fill="#ff8d6a" fill-opacity=".9"/>
+<text x="278" y="348" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="650" fill="#172554" text-anchor="start">iPhone 16 Pro</text>
+<text x="278" y="375" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#78849a" text-anchor="start">Space Black  ·  256 GB</text>
+<text x="278" y="425" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#e26559" text-anchor="start">Remove</text>
+<rect x="622" y="359" width="110" height="44" rx="11" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="642" y="387" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#78849a" text-anchor="start">−</text>
+<text x="677" y="387" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#172554" text-anchor="middle">1</text>
+<text x="712" y="387" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#315efb" text-anchor="middle">+</text>
+<text x="966" y="383" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="end">$999</text>
+<rect x="92" y="500" width="898" height="182" rx="16" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="110" y="517" width="145" height="148" rx="13" fill="#f3f6fb" stroke="none" stroke-width="1"/>
+<path d="M172 646V624a58 58 0 0 1 116 0v22" fill="none" stroke="#25345b" stroke-width="17" stroke-linecap="round"/>
+<rect x="164" y="634" width="34" height="72" rx="15" fill="#315efb" stroke="none" stroke-width="1"/>
+<rect x="263" y="634" width="34" height="72" rx="15" fill="#315efb" stroke="none" stroke-width="1"/>
+<rect x="172" y="641" width="17" height="48" rx="8" fill="#9fb3ff" stroke="none" stroke-width="1"/>
+<rect x="271" y="641" width="17" height="48" rx="8" fill="#9fb3ff" stroke="none" stroke-width="1"/>
+<text x="278" y="556" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="650" fill="#172554" text-anchor="start">Studio Headphones</text>
+<text x="278" y="583" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#78849a" text-anchor="start">Midnight  ·  Wireless</text>
+<text x="278" y="633" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#e26559" text-anchor="start">Remove</text>
+<rect x="622" y="567" width="110" height="44" rx="11" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="642" y="595" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#78849a" text-anchor="start">−</text>
+<text x="677" y="595" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#172554" text-anchor="middle">1</text>
+<text x="712" y="595" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#315efb" text-anchor="middle">+</text>
+<text x="966" y="591" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="end">$249</text>
+<rect x="1022" y="270" width="316" height="412" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<text x="1048" y="310" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#172554" text-anchor="start">Order summary</text>
+<path d="M1048 332H1312" stroke="#e7ebf2" stroke-width="1"/>
+<text x="1048" y="370" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">Subtotal</text>
+<text x="1312" y="370" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#172554" text-anchor="end">$1,248</text>
+<text x="1048" y="412" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">Shipping</text>
+<text x="1312" y="412" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#16856f" text-anchor="end">FREE</text>
+<text x="1048" y="454" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">Tax estimate</text>
+<text x="1312" y="454" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#172554" text-anchor="end">$99.84</text>
+<path d="M1048 479H1312" stroke="#e7ebf2" stroke-width="1"/>
+<text x="1048" y="516" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#172554" text-anchor="start">Total</text>
+<text x="1312" y="516" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750" fill="#172554" text-anchor="end">$1,347.84</text>
+<rect x="1048" y="547" width="264" height="46" rx="12" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="1180.0" y="576" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#ffffff" text-anchor="middle">Continue to checkout</text>
+<text x="1180" y="636" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#78849a" text-anchor="middle">⌑  Secure checkout</text>
+<text x="92" y="741" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#44516b" text-anchor="start">Have a promo code?</text>
+<rect x="92" y="759" width="300" height="48" rx="11" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="109" y="789" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#98a1b1" text-anchor="start">Enter code</text>
+<rect x="405" y="759" width="98" height="46" rx="12" fill="#ffffff" stroke="#dfe5ef" stroke-width="1"/>
+<text x="454.0" y="788" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#263450" text-anchor="middle">Apply</text>
+</g>
+<text x="1140" y="978" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="start">05 · Sign in</text>
+<text x="1860" y="978" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#748198" text-anchor="end">1440 × 960 · Desktop</text>
+<g transform="translate(1140,1003) scale(.5)">
+<rect x="0" y="0" width="1440" height="960" rx="0" fill="#f8f9fc" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1440" height="34" rx="0" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="720" y="23" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#e8edff" text-anchor="middle">Free delivery on orders over $100  ·  Easy 30-day returns</text>
+<rect x="0" y="34" width="1440" height="84" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<path d="M88 77l13-25 13 25h-9l-4-8-4 8z" fill="#315efb"/>
+<text x="124" y="81" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#172554" text-anchor="start">shopeEase</text>
+<text x="437" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="650" fill="#315efb" text-anchor="start">Home</text>
+<text x="531" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">Products</text>
+<text x="646" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">About</text>
+<rect x="766" y="54" width="290" height="46" rx="13" fill="#f5f7fb" stroke="none" stroke-width="1"/>
+<text x="789" y="83" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search products...</text>
+<text x="1121" y="83" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="400" fill="#34415d" text-anchor="start">♡</text>
+<text x="1177" y="83" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="400" fill="#34415d" text-anchor="start">♧</text>
+<rect x="1203" y="50" width="1" height="52" rx="0" fill="#e7ebf2" stroke="none" stroke-width="1"/>
+<circle cx="1250" cy="76" r="20" fill="#eef2ff"/><text x="1250" y="82" font-family="Arial" font-size="15" font-weight="700" fill="#315efb" text-anchor="middle">A</text>
+<text x="1282" y="74" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">Alex Morgan</text>
+<text x="1282" y="91" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#78849a" text-anchor="start">My account</text>
+<path d="M0 118H1440" stroke="#e7ebf2" stroke-width="1"/>
+<rect x="0" y="118" width="1440" height="842" rx="0" fill="#f5f7fb" stroke="none" stroke-width="1"/>
+<rect x="92" y="176" width="1256" height="680" rx="24" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="92" y="176" width="610" height="680" rx="24" fill="url(#heroGlow)" stroke="none" stroke-width="1"/>
+<text x="150" y="262" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="750" fill="#ffffff" text-anchor="start">Good tech. Great days.</text>
+<text x="150" y="302" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="450" fill="#dbe3ff" text-anchor="start">Your next favorite is one click away.</text>
+<rect x="313" y="360" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="319" y="366" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="358" y="372" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="377" cy="469" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="377" cy="469" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M330 513 Q373 468 424 428 L424 549 L330 549Z" fill="#ff8d6a" fill-opacity=".9"/>
+<text x="150" y="789" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#dbe3ff" text-anchor="start">Curated essentials · Fair prices · Fast delivery</text>
+<text x="786" y="278" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="750" fill="#172554" text-anchor="start">Welcome back</text>
+<text x="786" y="312" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">Sign in to continue to your account.</text>
+<text x="786" y="378" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#34415d" text-anchor="start">Email address</text>
+<rect x="786" y="393" width="485" height="54" rx="11" fill="#ffffff" stroke="#dfe5ef" stroke-width="1"/>
+<text x="806" y="427" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#98a1b1" text-anchor="start">alex@example.com</text>
+<text x="786" y="486" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#34415d" text-anchor="start">Password</text>
+<rect x="786" y="501" width="485" height="54" rx="11" fill="#ffffff" stroke="#dfe5ef" stroke-width="1"/>
+<text x="806" y="535" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="450" fill="#98a1b1" text-anchor="start">••••••••••</text>
+<text x="1271" y="486" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#315efb" text-anchor="end">Forgot password?</text>
+<rect x="786" y="580" width="18" height="18" rx="4" fill="#ffffff" stroke="#cbd3e1" stroke-width="1"/>
+<text x="814" y="595" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#59667e" text-anchor="start">Keep me signed in</text>
+<rect x="786" y="624" width="485" height="46" rx="12" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="1028.5" y="653" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#ffffff" text-anchor="middle">Sign in</text>
+<text x="1028" y="694" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#98a1b1" text-anchor="middle">or continue with</text>
+<rect x="786" y="715" width="485" height="46" rx="12" fill="#ffffff" stroke="#dfe5ef" stroke-width="1"/>
+<text x="1028.5" y="744" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="650" fill="#263450" text-anchor="middle">◎   Continue with Google</text>
+<text x="1028" y="804" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#59667e" text-anchor="middle">New to shopeEase?  Create an account</text>
+</g>
+<text x="2200" y="978" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="start">06 · My account</text>
+<text x="2920" y="978" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#748198" text-anchor="end">1440 × 960 · Desktop</text>
+<g transform="translate(2200,1003) scale(.5)">
+<rect x="0" y="0" width="1440" height="960" rx="0" fill="#f8f9fc" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1440" height="34" rx="0" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="720" y="23" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#e8edff" text-anchor="middle">Free delivery on orders over $100  ·  Easy 30-day returns</text>
+<rect x="0" y="34" width="1440" height="84" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<path d="M88 77l13-25 13 25h-9l-4-8-4 8z" fill="#315efb"/>
+<text x="124" y="81" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#172554" text-anchor="start">shopeEase</text>
+<text x="437" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="650" fill="#315efb" text-anchor="start">Home</text>
+<text x="531" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">Products</text>
+<text x="646" y="83" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="550" fill="#46536d" text-anchor="start">About</text>
+<rect x="766" y="54" width="290" height="46" rx="13" fill="#f5f7fb" stroke="none" stroke-width="1"/>
+<text x="789" y="83" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search products...</text>
+<text x="1121" y="83" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="400" fill="#34415d" text-anchor="start">♡</text>
+<text x="1177" y="83" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="400" fill="#34415d" text-anchor="start">♧</text>
+<rect x="1203" y="50" width="1" height="52" rx="0" fill="#e7ebf2" stroke="none" stroke-width="1"/>
+<circle cx="1250" cy="76" r="20" fill="#eef2ff"/><text x="1250" y="82" font-family="Arial" font-size="15" font-weight="700" fill="#315efb" text-anchor="middle">A</text>
+<text x="1282" y="74" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">Alex Morgan</text>
+<text x="1282" y="91" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#78849a" text-anchor="start">My account</text>
+<path d="M0 118H1440" stroke="#e7ebf2" stroke-width="1"/>
+<text x="92" y="177" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="750" fill="#172554" text-anchor="start">My account</text>
+<text x="92" y="206" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">Manage your profile and orders.</text>
+<rect x="92" y="238" width="258" height="536" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<circle cx="221" cy="300" r="42" fill="#eef2ff"/><text x="221" y="309" font-family="Arial" font-size="25" font-weight="700" fill="#315efb" text-anchor="middle">A</text>
+<text x="221" y="369" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#172554" text-anchor="middle">Alex Morgan</text>
+<text x="221" y="392" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="middle">alex@example.com</text>
+<path d="M112 421H330" stroke="#e7ebf2" stroke-width="1"/>
+<rect x="109" y="440" width="224" height="42" rx="10" fill="#eef2ff" stroke="none" stroke-width="1"/>
+<text x="131" y="465" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#315efb" text-anchor="start">⌂</text>
+<text x="162" y="465" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#315efb" text-anchor="start">Overview</text>
+<text x="131" y="522" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#315efb" text-anchor="start">▤</text>
+<text x="162" y="522" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#56627a" text-anchor="start">My orders</text>
+<text x="131" y="579" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#315efb" text-anchor="start">⌖</text>
+<text x="162" y="579" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#56627a" text-anchor="start">Addresses</text>
+<text x="131" y="636" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#315efb" text-anchor="start">◎</text>
+<text x="162" y="636" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#56627a" text-anchor="start">Account details</text>
+<rect x="382" y="238" width="956" height="194" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<text x="414" y="282" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#172554" text-anchor="start">Welcome back, Alex</text>
+<text x="414" y="310" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#78849a" text-anchor="start">Here’s what’s happening with your account.</text>
+<rect x="414" y="335" width="266" height="70" rx="12" fill="#f6f8fc" stroke="none" stroke-width="1"/>
+<text x="431" y="367" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#315efb" text-anchor="start">02</text>
+<text x="496" y="367" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#65718a" text-anchor="start">Orders placed</text>
+<rect x="700" y="335" width="266" height="70" rx="12" fill="#f6f8fc" stroke="none" stroke-width="1"/>
+<text x="717" y="367" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#315efb" text-anchor="start">01</text>
+<text x="782" y="367" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#65718a" text-anchor="start">In transit</text>
+<rect x="986" y="335" width="266" height="70" rx="12" fill="#f6f8fc" stroke="none" stroke-width="1"/>
+<text x="1003" y="367" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#315efb" text-anchor="start">$248</text>
+<text x="1068" y="367" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#65718a" text-anchor="start">Rewards balance</text>
+<rect x="382" y="457" width="956" height="317" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<text x="414" y="500" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#172554" text-anchor="start">Recent orders</text>
+<text x="1304" y="499" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#315efb" text-anchor="end">View all  →</text>
+<path d="M414 518H1305" stroke="#e7ebf2" stroke-width="1"/>
+<text x="414" y="550" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#98a1b1" text-anchor="start">ORDER</text>
+<text x="648" y="550" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#98a1b1" text-anchor="start">DATE</text>
+<text x="848" y="550" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#98a1b1" text-anchor="start">STATUS</text>
+<text x="1159" y="550" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#98a1b1" text-anchor="start">TOTAL</text>
+<path d="M414 579H1305" stroke="#e7ebf2" stroke-width="1"/>
+<text x="414" y="598" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#315efb" text-anchor="start">#SE-2048</text>
+<text x="648" y="598" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#56627a" text-anchor="start">Sep 24, 2026</text>
+<rect x="848" y="577" width="94" height="28" rx="14" fill="#e9f7f3" stroke="none" stroke-width="1"/>
+<text x="895.0" y="596" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#16856f" text-anchor="middle">Delivered</text>
+<text x="1159" y="598" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">$999.00</text>
+<path d="M414 650H1305" stroke="#e7ebf2" stroke-width="1"/>
+<text x="414" y="669" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#315efb" text-anchor="start">#SE-2033</text>
+<text x="648" y="669" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#56627a" text-anchor="start">Sep 19, 2026</text>
+<rect x="848" y="648" width="94" height="28" rx="14" fill="#fff3e6" stroke="none" stroke-width="1"/>
+<text x="895.0" y="667" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#c47819" text-anchor="middle">In transit</text>
+<text x="1159" y="669" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">$249.00</text>
+</g>
+<text x="80" y="1680" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="750" fill="#315efb" text-anchor="start">RESPONSIVE CHECK  /  PRODUCTS</text>
+<text x="80" y="1721" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#172554" text-anchor="start">Mobile · 390 × 844</text>
+<g transform="translate(80,1750) scale(.43)">
+<rect x="0" y="0" width="390" height="844" rx="28" fill="#f8f9fc" stroke="#d7deeb" stroke-width="2"/>
+<rect x="0" y="0" width="390" height="28" rx="28" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="195" y="19" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#ffffff" text-anchor="middle">Free shipping over $100</text>
+<rect x="0" y="28" width="390" height="66" rx="0" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="20" y="70" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="500" fill="#34415d" text-anchor="start">☰</text>
+<text x="63" y="69" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="750" fill="#172554" text-anchor="start">shopeEase</text>
+<text x="334" y="70" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="500" fill="#315efb" text-anchor="start">♧</text>
+<path d="M0 94H390" stroke="#e7ebf2" stroke-width="1"/>
+<text x="20" y="132" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="750" fill="#172554" text-anchor="start">All products</text>
+<text x="20" y="154" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Find your next favorite tech.</text>
+<rect x="20" y="173" width="350" height="48" rx="12" fill="#ffffff" stroke="#e5eaf2" stroke-width="1"/>
+<text x="36" y="203" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#8b96a8" text-anchor="start">⌕   Search products...</text>
+<rect x="20" y="237" width="84" height="28" rx="14" fill="#172554" stroke="none" stroke-width="1"/>
+<text x="62.0" y="256" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#ffffff" text-anchor="middle">All (128)</text>
+<rect x="112" y="237" width="76" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="150.0" y="256" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">Phones</text>
+<rect x="196" y="237" width="66" height="28" rx="14" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="229.0" y="256" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#56627a" text-anchor="middle">Audio</text>
+<text x="20" y="294" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#78849a" text-anchor="start">128 products</text>
+<text x="370" y="294" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="550" fill="#44516b" text-anchor="end">Sort ⌄</text>
+<rect x="20" y="313" width="280" height="342" rx="18" fill="#ffffff" stroke="#e9edf4" stroke-width="1"/>
+<rect x="32" y="325" width="256" height="183" rx="14" fill="#f3f6fb" stroke="none" stroke-width="1"/>
+<rect x="42" y="335" width="91" height="28" rx="14" fill="#eaf0ff" stroke="none" stroke-width="1"/>
+<text x="87.5" y="354" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="650" fill="#315efb" text-anchor="middle">POPULAR</text>
+<rect x="106" y="345" width="128" height="206" rx="22" fill="#111827" stroke="none" stroke-width="1"/>
+<rect x="112" y="351" width="116" height="194" rx="17" fill="url(#phoneGlow)" stroke="none" stroke-width="1"/>
+<rect x="151" y="357" width="38" height="7" rx="4" fill="#111827" stroke="none" stroke-width="1"/>
+<circle cx="170" cy="454" r="42" fill="#ffffff" fill-opacity=".17"/><circle cx="170" cy="454" r="29" fill="#ffffff" fill-opacity=".20"/>
+<path d="M123 498 Q166 453 217 413 L217 534 L123 534Z" fill="#ff8d6a" fill-opacity=".9"/>
+<text x="40" y="540" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="650" fill="#172554" text-anchor="start">iPhone 16 Pro</text>
+<text x="40" y="564" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#78849a" text-anchor="start">Electronics  ·  ★ 4.8</text>
+<text x="40" y="605" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#172554" text-anchor="start">$999</text>
+<rect x="220" y="579" width="54" height="54" rx="16" fill="#315efb" stroke="none" stroke-width="1"/>
+<text x="247" y="614" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#fff" text-anchor="middle">+</text>
+</g>
+<rect x="1110" y="1718" width="2010" height="420" rx="22" fill="#ffffff" stroke="none" stroke-width="1"/>
+<text x="1150" y="1766" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="750" fill="#315efb" text-anchor="start">FOUNDATION</text>
+<text x="1150" y="1812" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700" fill="#172554" text-anchor="start">Color · type · spacing</text>
+<text x="1150" y="1854" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="450" fill="#78849a" text-anchor="start">A calm, premium palette keeps product photography in focus.</text>
+<rect x="1150" y="1881" width="146" height="72" rx="13" fill="#172554" stroke="#e7ebf2" stroke-width="1"/>
+<text x="1150" y="1980" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Ink</text>
+<text x="1150" y="2000" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#8a95a7" text-anchor="start">#172554</text>
+<rect x="1330" y="1881" width="146" height="72" rx="13" fill="#315EFB" stroke="#e7ebf2" stroke-width="1"/>
+<text x="1330" y="1980" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Royal blue</text>
+<text x="1330" y="2000" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#8a95a7" text-anchor="start">#315EFB</text>
+<rect x="1510" y="1881" width="146" height="72" rx="13" fill="#f8f9fc" stroke="#e7ebf2" stroke-width="1"/>
+<text x="1510" y="1980" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Canvas</text>
+<text x="1510" y="2000" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#8a95a7" text-anchor="start">#F8F9FC</text>
+<rect x="1690" y="1881" width="146" height="72" rx="13" fill="#16a98a" stroke="#e7ebf2" stroke-width="1"/>
+<text x="1690" y="1980" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Mint</text>
+<text x="1690" y="2000" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#8a95a7" text-anchor="start">#16A98A</text>
+<rect x="1870" y="1881" width="146" height="72" rx="13" fill="#ff8067" stroke="#e7ebf2" stroke-width="1"/>
+<text x="1870" y="1980" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#44516b" text-anchor="start">Coral</text>
+<text x="1870" y="2000" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="450" fill="#8a95a7" text-anchor="start">#FF8067</text>
+<text x="1150" y="2054" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="650" fill="#172554" text-anchor="start">TYPE  ·  Inter / system sans</text>
+<text x="1454" y="2054" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="450" fill="#78849a" text-anchor="start">Display 48 / H1 34 / H2 26 / Body 16 / Caption 12</text>
+<text x="1150" y="2095" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="550" fill="#44516b" text-anchor="start">GRID  ·  12 columns  ·  72 px margins  ·  24 px gutters  ·  8 px spacing rhythm</text>
+<text x="1150" y="2122" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="550" fill="#44516b" text-anchor="start">MOBILE  ·  4 columns  ·  20 px margins  ·  16 px gutters  ·  tap targets 44 px minimum</text>
+<text x="80" y="2208" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="450" fill="#8a95a7" text-anchor="start">SHOPEASE  ·  Design handoff board  ·  Editable vector artwork for Figma</text>
+</svg>

@@ -1,0 +1,28 @@
+import { Component, input, output, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { DecimalPipe } from '@angular/common';
+import { CartService } from '../service/cart';
+
+@Component({
+  imports: [RouterLink, DecimalPipe],
+  selector: 'app-product-card',
+  styleUrl: './product-card.scss',
+  templateUrl: './product-card.html',
+})
+export class ProductCardComponent {
+  readonly product = input.required<any>();
+
+  readonly addToCartdata = output<any>();
+
+  private readonly cartService = inject(CartService);
+
+  addToCart(): void {
+    this.cartService.addToCart(this.product());
+    this.addToCartdata.emit(this.product());
+  }
+
+  getStars(rating: number): string {
+    const full = Math.round(rating);
+    return '★'.repeat(full) + '☆'.repeat(5 - full);
+  }
+}

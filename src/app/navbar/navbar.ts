@@ -1,0 +1,34 @@
+import { Component, inject, signal } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { AuthService } from '../service/auth';
+import { CartService } from '../service/cart';
+
+@Component({
+  imports: [RouterLink, RouterLinkActive],
+  selector: 'app-navbar',
+  styleUrl: './navbar.scss',
+  templateUrl: './navbar.html',
+})
+export class Navbar {
+  private readonly authService = inject(AuthService);
+  private readonly cartService = inject(CartService);
+
+  readonly isLoggedIn = this.authService.isLoggedIn;
+  readonly user = this.authService.user;
+  readonly cartCount = this.cartService.cartCount;
+
+  mobileMenuOpen = signal(false);
+
+  toggleMobileMenu() {
+    this.mobileMenuOpen.update(v => !v);
+  }
+
+  closeMobileMenu() {
+    this.mobileMenuOpen.set(false);
+  }
+
+  logout() {
+    this.authService.logout();
+    this.closeMobileMenu();
+  }
+}

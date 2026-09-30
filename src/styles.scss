@@ -1,1 +1,246 @@
-/* You can add global styles to this file, and also import other style files */
+/* ─── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700;750;800&display=swap');
+
+/* ─── Design Tokens ────────────────────────────────────────── */
+:root {
+  --ink:        #172554;
+  --ink-light:  #44516b;
+  --action:     #315efb;
+  --action-dark:#2347d4;
+  --canvas:     #f8f9fc;
+  --surface:    #ffffff;
+  --border:     #e7ebf2;
+  --border-mid: #d6dce7;
+  --mint:       #16a98a;
+  --coral:      #ff8067;
+  --muted:      #78849a;
+  --muted-mid:  #56627a;
+  --label-bg:   #eef2ff;
+  --label-text: #315efb;
+  --error:      #e26559;
+  --shadow-sm:  0 1px 3px rgba(23,37,84,.06), 0 1px 2px rgba(23,37,84,.04);
+  --shadow-md:  0 4px 16px rgba(23,37,84,.09);
+  --shadow-lg:  0 12px 32px rgba(23,37,84,.12);
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  18px;
+  --radius-xl:  24px;
+  --radius-pill:999px;
+}
+
+/* ─── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--canvas);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { text-decoration: none; color: inherit; cursor: pointer; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; font-family: inherit; }
+ul, ol { list-style: none; }
+
+/* ─── Layout helpers ───────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5%, 5rem);
+}
+
+.page-content {
+  min-height: calc(100vh - 118px); /* navbar height */
+  padding-top: 2rem;
+}
+
+/* ─── Focus ring (a11y) ────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ─── Buttons ──────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  background: var(--action);
+  color: #fff;
+  font-size: .9375rem;
+  font-weight: 650;
+  border: none;
+  border-radius: var(--radius-md);
+  transition: background .2s, transform .12s, box-shadow .2s;
+  line-height: 1;
+
+  &:hover {
+    background: var(--action-dark);
+    box-shadow: 0 4px 14px rgba(49,94,251,.35);
+    transform: translateY(-1px);
+  }
+  &:active { transform: translateY(0); }
+  &:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: .9375rem;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color .2s, box-shadow .2s, transform .12s;
+
+  &:hover {
+    border-color: var(--action);
+    color: var(--action);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+  }
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .5rem .875rem;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--muted-mid);
+  font-size: .875rem;
+  font-weight: 550;
+  transition: background .15s, color .15s;
+
+  &:hover { background: var(--label-bg); color: var(--action); }
+}
+
+/* ─── Pill / Badge ─────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: .2rem .75rem;
+  border-radius: var(--radius-pill);
+  font-size: .6875rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.badge-action  { background: var(--label-bg); color: var(--action); }
+.badge-mint    { background: #e6f7f4; color: var(--mint); }
+.badge-coral   { background: #fff0ed; color: var(--coral); }
+.badge-ink     { background: var(--ink); color: #fff; }
+
+/* ─── Card base ────────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .2s, transform .2s;
+
+  &:hover { box-shadow: var(--shadow-md); }
+}
+
+/* ─── Form controls ────────────────────────────────────────── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .375rem;
+
+  label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--ink-light);
+  }
+}
+
+.form-control {
+  width: 100%;
+  padding: .75rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  font-size: .9375rem;
+  color: var(--ink);
+  font-family: inherit;
+  transition: border-color .2s, box-shadow .2s;
+
+  &::placeholder { color: var(--muted); }
+
+  &:focus {
+    outline: none;
+    border-color: var(--action);
+    box-shadow: 0 0 0 3px rgba(49,94,251,.12);
+  }
+
+  &.is-invalid {
+    border-color: var(--error);
+    &:focus { box-shadow: 0 0 0 3px rgba(226,101,89,.15); }
+  }
+}
+
+.field-error {
+  font-size: .8125rem;
+  color: var(--error);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+/* ─── Divider ──────────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  border: none;
+  margin-block: 1.5rem;
+}
+
+/* ─── Spinner ──────────────────────────────────────────────── */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--border);
+  border-top-color: var(--action);
+  border-radius: 50%;
+  animation: spin .75s linear infinite;
+  margin-inline: auto;
+}
+
+/* ─── Star rating ──────────────────────────────────────────── */
+.stars { color: #f2a23a; font-size: .95rem; }
+
+/* ─── Top announcement bar ─────────────────────────────────── */
+.announcement-bar {
+  background: var(--ink);
+  color: #e8edff;
+  text-align: center;
+  font-size: .8125rem;
+  font-weight: 500;
+  padding: .5rem 1rem;
+  letter-spacing: .01em;
+}
+
+/* ─── Responsive breakpoints (mobile-first) ────────────────── */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}
+@media (min-width: 769px) {
+  .hide-desktop { display: none !important; }
+}

@@ -1,0 +1,136 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+/* Image */
+.product-card-img-wrap { display: block; }
+
+.product-card-img-bg {
+  background: #f3f6fb;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem;
+}
+
+.product-img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  transition: transform .3s;
+
+  .product-card:hover & { transform: scale(1.04); }
+}
+
+.product-badge {
+  position: absolute;
+  top: .75rem;
+  left: .75rem;
+  font-size: .6875rem;
+  padding: .25rem .625rem;
+}
+
+/* Body */
+.product-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  padding: 1.125rem;
+  flex: 1;
+}
+
+.product-title-link {
+  display: block;
+
+  &:hover .product-title { color: var(--action); }
+}
+
+.product-title {
+  font-size: .9375rem;
+  font-weight: 650;
+  color: var(--ink);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color .15s;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.product-category {
+  font-size: .75rem;
+  color: var(--muted);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+.rating-val {
+  font-size: .75rem;
+  color: var(--muted);
+  font-weight: 550;
+}
+
+/* Footer */
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: .5rem;
+}
+
+.product-price {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.add-to-cart-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--action);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s, transform .12s, box-shadow .2s;
+  flex-shrink: 0;
+
+  &:hover {
+    background: var(--action-dark);
+    box-shadow: 0 4px 12px rgba(49,94,251,.4);
+    transform: scale(1.05);
+  }
+  &:active { transform: scale(.97); }
+  &:focus-visible {
+    outline: 2px solid var(--action);
+    outline-offset: 2px;
+  }
+}

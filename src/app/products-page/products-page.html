@@ -1,0 +1,116 @@
+<div class="products-page">
+
+  <!-- Page header -->
+  <div class="products-header container">
+    <div>
+      <h1 class="products-title">All products</h1>
+      <p class="products-sub">Find the right tech for your everyday.</p>
+    </div>
+  </div>
+
+  <!-- Search bar -->
+  <div class="search-wrap container">
+    <label for="products-search" class="visually-hidden">Search products</label>
+    <div class="search-input-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input
+        id="products-search"
+        type="search"
+        class="search-input"
+        placeholder="Search by product name, brand, or category"
+        [value]="searchQuery()"
+        (input)="onSearch($any($event.target).value)"
+        autocomplete="off"
+        aria-label="Search products"
+      />
+    </div>
+  </div>
+
+  <!-- Filter chips + Sort -->
+  <div class="filters-row container">
+    <div class="category-chips" role="group" aria-label="Filter by category">
+      <button
+        class="chip"
+        [class.chip-active]="activeCategory() === 'all'"
+        (click)="setCategory('all')"
+        [attr.aria-pressed]="activeCategory() === 'all'">
+        All ({{ categoryCount('all') }})
+      </button>
+      @for (cat of categories(); track cat) {
+        <button
+          class="chip"
+          [class.chip-active]="activeCategory() === cat"
+          (click)="setCategory(cat)"
+          [attr.aria-pressed]="activeCategory() === cat">
+          {{ cat }} · {{ categoryCount(cat) }}
+        </button>
+      }
+    </div>
+
+    <div class="sort-wrap">
+      <label for="sort-select" class="visually-hidden">Sort products</label>
+      <select
+        id="sort-select"
+        class="sort-select"
+        [value]="sortBy()"
+        (change)="setSort($any($event.target).value)"
+        aria-label="Sort products">
+        <option value="recommended">Sort by Recommended</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating">Highest Rated</option>
+        <option value="name">Name A–Z</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Result count -->
+  <div class="result-row container">
+    <p class="result-count" aria-live="polite" aria-atomic="true">
+      @if (!loading() && !error()) {
+        {{ filteredProducts().length }} product{{ filteredProducts().length === 1 ? '' : 's' }}
+      }
+    </p>
+  </div>
+
+  <!-- Loading state -->
+  @if (loading()) {
+    <div class="state-panel container" role="status" aria-label="Loading products">
+      <div class="spinner"></div>
+      <p class="state-text">Loading products…</p>
+    </div>
+  }
+
+  <!-- Error state -->
+  @if (error() && !loading()) {
+    <div class="state-panel container" role="alert">
+      <span class="state-icon">⚠</span>
+      <p class="state-text">{{ error() }}</p>
+      <button class="btn-primary" (click)="ngOnInit()">Try again</button>
+    </div>
+  }
+
+  <!-- Empty state -->
+  @if (!loading() && !error() && filteredProducts().length === 0) {
+    <div class="state-panel container" role="status">
+      <span class="state-icon">🔍</span>
+      <p class="state-text state-title">No products found</p>
+      <p class="state-sub">Try a different search term or clear the filters.</p>
+      <button class="btn-secondary" (click)="onSearch(''); setCategory('all')">Clear filters</button>
+    </div>
+  }
+
+  <!-- Product grid -->
+  @if (!loading() && !error() && filteredProducts().length > 0) {
+    <div class="products-grid container" role="list" aria-label="Product list">
+      @for (product of filteredProducts(); track product.id) {
+        <div role="listitem">
+          <app-product-card [product]="product"></app-product-card>
+        </div>
+      }
+    </div>
+  }
+
+</div>

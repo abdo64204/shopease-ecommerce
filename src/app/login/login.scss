@@ -1,0 +1,94 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  padding: 2rem 1rem;
+  background: var(--canvas);
+}
+
+.login-panel {
+  width: 100%;
+  max-width: 440px;
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Brand */
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.25rem;
+  font-weight: 750;
+  color: var(--ink);
+  margin-bottom: 1.75rem;
+  justify-content: center;
+
+  svg { width: 24px; height: 24px; }
+}
+
+/* Headings */
+.login-title {
+  font-size: 1.75rem;
+  font-weight: 750;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.login-sub {
+  font-size: .9375rem;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--ink-light);
+  display: block;
+  margin-bottom: .375rem;
+}
+
+.login-submit-btn {
+  width: 100%;
+  padding: .875rem;
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+/* Note */
+.login-note {
+  font-size: .875rem;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.login-note-link {
+  color: var(--action);
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .15s;
+
+  &:hover { opacity: .8; }
+}
+
+.login-demo-hint {
+  display: block;
+  font-size: .75rem;
+  color: var(--muted);
+  margin-top: .375rem;
+  font-style: italic;
+}

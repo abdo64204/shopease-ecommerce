@@ -1,0 +1,71 @@
+<div class="login-page">
+  <div class="login-panel card">
+
+    <!-- Brand -->
+    <div class="login-brand" aria-hidden="true">
+      <svg viewBox="0 0 26 26" aria-hidden="true" focusable="false">
+        <path d="M13 1l13 25H0L13 1Z" fill="#315efb"/>
+      </svg>
+      <span>shopeEase</span>
+    </div>
+
+    <h1 class="login-title">Welcome back</h1>
+    <p class="login-sub">Sign in to your account to continue shopping.</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form" novalidate aria-label="Sign in form">
+
+      <div class="form-group">
+        <label for="login-email" class="form-label">Email address</label>
+        <input
+          id="login-email"
+          type="email"
+          formControlName="email"
+          class="form-control"
+          [class.is-invalid]="loginForm.controls.email.touched && loginForm.controls.email.invalid"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+          aria-required="true"
+          [attr.aria-describedby]="loginForm.controls.email.touched && loginForm.controls.email.invalid ? 'email-error' : null"
+        />
+        @if (loginForm.controls.email.touched && loginForm.controls.email.invalid) {
+          <span id="email-error" class="field-error" role="alert">
+            <span aria-hidden="true">⚠</span> Please enter a valid email address.
+          </span>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="login-password" class="form-label">Password</label>
+        <input
+          id="login-password"
+          type="password"
+          formControlName="password"
+          class="form-control"
+          [class.is-invalid]="loginForm.controls.password.touched && loginForm.controls.password.invalid"
+          placeholder="At least 6 characters"
+          autocomplete="current-password"
+          required
+          aria-required="true"
+          [attr.aria-describedby]="loginForm.controls.password.touched && loginForm.controls.password.invalid ? 'password-error' : null"
+        />
+        @if (loginForm.controls.password.touched && loginForm.controls.password.invalid) {
+          <span id="password-error" class="field-error" role="alert">
+            <span aria-hidden="true">⚠</span> Password must be at least 6 characters.
+          </span>
+        }
+      </div>
+
+      <button type="submit" class="btn-primary login-submit-btn" id="login-submit">
+        Sign in
+      </button>
+
+    </form>
+
+    <p class="login-note">
+      Don't have an account? <span class="login-note-link">Create one</span>
+      <span class="login-demo-hint">(Demo: enter any email &amp; password ≥ 6 chars)</span>
+    </p>
+
+  </div>
+</div>
