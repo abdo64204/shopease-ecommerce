@@ -53,3 +53,4 @@ Thumbs.db
 
 # Generated css maps
 *.css.map
+.env*
