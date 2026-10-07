@@ -78,7 +78,7 @@
   box-sizing: border-box;
 
   @media (max-width: 480px) {
-    padding: 1rem .875rem;
+    padding: .75rem .625rem;
     gap: .5rem;
   }
 }
@@ -113,6 +113,12 @@
   gap: .5rem;
   min-width: 0;
   width: 100%;
+
+  @media (max-width: 380px) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .25rem;
+  }
 }
 
 .product-category {
@@ -159,7 +165,7 @@
   white-space: nowrap;
 
   @media (max-width: 480px) {
-    font-size: 1.0625rem;
+    font-size: .9375rem;
   }
 }
 
@@ -177,6 +183,12 @@
   justify-content: center;
   transition: background .2s, transform .12s, box-shadow .2s;
   flex-shrink: 0;
+
+  @media (max-width: 380px) {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+  }
 
   &:hover {
     background: var(--action-dark);

@@ -2,14 +2,14 @@
   <!-- Image area -->
   <a [routerLink]="['/products', product().id]" class="product-card-img-wrap" tabindex="-1" aria-hidden="true">
     <div class="product-card-img-bg">
-      @if (product().discountPercentage && product().discountPercentage >= 10) {
+      @if ((product().discountPercentage ?? 0) >= 10) {
         <span class="badge badge-coral product-badge">-{{ product().discountPercentage | number:'1.0-0' }}%</span>
       }
       <img
         [src]="product().thumbnail || product().images?.[0]"
         [alt]="product().title"
         class="product-img"
-        loading="lazy"
+        [attr.loading]="loadingMode()"
       />
     </div>
   </a>
@@ -21,10 +21,10 @@
     </a>
 
     <div class="product-meta">
-      <span class="product-category">{{ product().category }}</span>
+      <span class="product-category">{{ categoryLabel(product().category) }}</span>
       @if (product().rating) {
         <span class="product-rating" aria-label="Rating: {{ product().rating | number:'1.1-1' }} out of 5">
-          <span class="stars" aria-hidden="true">{{ getStars(product().rating) }}</span>
+          <span class="stars" aria-hidden="true">{{ getStars(product().rating ?? 0) }}</span>
           <span class="rating-val">{{ product().rating | number:'1.1-1' }}</span>
         </span>
       }

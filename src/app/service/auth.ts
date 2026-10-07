@@ -2,52 +2,64 @@
 import { isPlatformBrowser } from '@angular/common';
 import { inject, Injectable, PLATFORM_ID, signal } from '@angular/core';
 
+export interface AuthUser {
+  name: string;
+  email: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private platformId = inject(PLATFORM_ID);
+  private readonly platformId = inject(PLATFORM_ID);
 
-  isLoggedIn = signal(false);
+  readonly isLoggedIn = signal(false);
 
-  user = signal<any>(null);
+  readonly user = signal<AuthUser | null>(null);
 
-  login(user: any) {
+  login(user: AuthUser): void {
     this.user.set(user);
     this.isLoggedIn.set(true);
     if (isPlatformBrowser(this.platformId)) {
-      localStorage.setItem(
-        'user',
-        JSON.stringify(user)
-      );
+      try {
+        localStorage.setItem('user', JSON.stringify(user));
+      } catch {
+        // Keep the current session usable if browser storage is unavailable.
+      }
     }
 
   }
 
-  logout() {
+  logout(): void {
     this.user.set(null);
     this.isLoggedIn.set(false);
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
 
-    localStorage.removeItem('user');
+    try {
+      localStorage.removeItem('user');
+    } catch {
+      // Keep the in-memory session cleared if browser storage is unavailable.
+    }
   }
-  restoreUser() {
+  restoreUser(): void {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
 
 
-    const savedUser = localStorage.getItem('user');
-
-    if (savedUser) {
-
-      const user = JSON.parse(savedUser);
-
-      this.user.set(user);
-
-      this.isLoggedIn.set(true);
+    try {
+      const savedUser: unknown = JSON.parse(localStorage.getItem('user') ?? 'null');
+      if (typeof savedUser === 'object' && savedUser !== null &&
+          'name' in savedUser && typeof savedUser.name === 'string' &&
+          'email' in savedUser && typeof savedUser.email === 'string') {
+        this.user.set({ name: savedUser.name, email: savedUser.email });
+        this.isLoggedIn.set(true);
+      }
+    } catch {
+      this.user.set(null);
+      this.isLoggedIn.set(false);
     }
   }
 

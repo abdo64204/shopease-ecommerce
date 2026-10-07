@@ -1,12 +1,12 @@
 import { Component, OnInit, inject, signal, computed } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { ProductCardComponent } from '../product/product-card';
-import { ProductService } from '../service/product';
+import { Product, ProductService } from '../service/product';
 
 type SortKey = 'recommended' | 'price-asc' | 'price-desc' | 'rating' | 'name';
+const STORE_CATEGORIES = new Set(['smartphones', 'laptops', 'tablets', 'mobile-accessories']);
 
 @Component({
-  imports: [ProductCardComponent, FormsModule],
+  imports: [ProductCardComponent],
   selector: 'app-products-page',
   styleUrl: './products-page.scss',
   templateUrl: './products-page.html',
@@ -14,20 +14,25 @@ type SortKey = 'recommended' | 'price-asc' | 'price-desc' | 'rating' | 'name';
 export class ProductsPage implements OnInit {
   private readonly productService = inject(ProductService);
 
-  readonly allProducts = signal<any[]>([]);
+  readonly allProducts = signal<Product[]>([]);
   readonly loading = signal(true);
   readonly error = signal<string | null>(null);
   readonly searchQuery = signal('');
   readonly activeCategory = signal('all');
   readonly sortBy = signal<SortKey>('recommended');
+  readonly visibleLimit = signal(12);
+  readonly visibleProducts = computed(() => this.filteredProducts().slice(0, this.visibleLimit()));
+  private readonly storeProducts = computed(() =>
+    this.allProducts().filter(product => STORE_CATEGORIES.has(product.category))
+  );
 
   readonly categories = computed(() => {
-    const cats = [...new Set(this.allProducts().map(p => p.category as string))].sort();
+    const cats = [...new Set(this.storeProducts().map(p => p.category))].sort();
     return cats;
   });
 
   readonly filteredProducts = computed(() => {
-    let products = this.allProducts();
+    let products = this.storeProducts();
     const query = this.searchQuery().trim().toLowerCase();
     const cat = this.activeCategory();
 
@@ -53,8 +58,14 @@ export class ProductsPage implements OnInit {
   });
 
   ngOnInit(): void {
+    this.loadProducts();
+  }
+
+  loadProducts(): void {
+    this.error.set(null);
+    this.loading.set(true);
     this.productService.getProducts().subscribe({
-      next: (data: any) => {
+      next: data => {
         this.allProducts.set(data.products ?? []);
         this.loading.set(false);
       },
@@ -67,18 +78,37 @@ export class ProductsPage implements OnInit {
 
   onSearch(value: string): void {
     this.searchQuery.set(value);
+    this.visibleLimit.set(12);
+  }
+
+  onSearchInput(event: Event): void {
+    if (event.target instanceof HTMLInputElement) this.onSearch(event.target.value);
+  }
+
+  onSortChange(event: Event): void {
+    if (event.target instanceof HTMLSelectElement) this.setSort(event.target.value as SortKey);
   }
 
   setCategory(cat: string): void {
     this.activeCategory.set(cat);
+    this.visibleLimit.set(12);
   }
 
   setSort(sort: SortKey): void {
     this.sortBy.set(sort);
+    this.visibleLimit.set(12);
+  }
+
+  showMore(): void {
+    this.visibleLimit.update(limit => limit + 12);
+  }
+
+  categoryLabel(category: string): string {
+    return category.replaceAll('-', ' ');
   }
 
   categoryCount(cat: string): number {
-    if (cat === 'all') return this.allProducts().length;
-    return this.allProducts().filter(p => p.category === cat).length;
+    if (cat === 'all') return this.storeProducts().length;
+    return this.storeProducts().filter(p => p.category === cat).length;
   }
 }

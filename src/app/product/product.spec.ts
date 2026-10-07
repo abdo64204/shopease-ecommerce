@@ -17,6 +17,7 @@ describe('ProductCardComponent', () => {
     fixture.componentRef.setInput('product', {
       id: 1,
       title: 'Test Product',
+      category: 'smartphones',
       price: 10,
       rating: 4,
       thumbnail: 'https://via.placeholder.com/150',

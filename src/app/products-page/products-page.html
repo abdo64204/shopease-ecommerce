@@ -21,7 +21,7 @@
         class="search-input"
         placeholder="Search by product name, brand, or category"
         [value]="searchQuery()"
-        (input)="onSearch($any($event.target).value)"
+        (input)="onSearchInput($event)"
         autocomplete="off"
         aria-label="Search products"
       />
@@ -44,7 +44,7 @@
           [class.chip-active]="activeCategory() === cat"
           (click)="setCategory(cat)"
           [attr.aria-pressed]="activeCategory() === cat">
-          {{ cat }} · {{ categoryCount(cat) }}
+          {{ categoryLabel(cat) }} · {{ categoryCount(cat) }}
         </button>
       }
     </div>
@@ -55,7 +55,7 @@
         id="sort-select"
         class="sort-select"
         [value]="sortBy()"
-        (change)="setSort($any($event.target).value)"
+        (change)="onSortChange($event)"
         aria-label="Sort products">
         <option value="recommended">Sort by Recommended</option>
         <option value="price-asc">Price: Low to High</option>
@@ -70,7 +70,7 @@
   <div class="result-row container">
     <p class="result-count" aria-live="polite" aria-atomic="true">
       @if (!loading() && !error()) {
-        {{ filteredProducts().length }} product{{ filteredProducts().length === 1 ? '' : 's' }}
+        Showing {{ visibleProducts().length }} of {{ filteredProducts().length }} products
       }
     </p>
   </div>
@@ -88,7 +88,7 @@
     <div class="state-panel container" role="alert">
       <span class="state-icon">⚠</span>
       <p class="state-text">{{ error() }}</p>
-      <button class="btn-primary" (click)="ngOnInit()">Try again</button>
+      <button class="btn-primary" (click)="loadProducts()">Try again</button>
     </div>
   }
 
@@ -105,12 +105,19 @@
   <!-- Product grid -->
   @if (!loading() && !error() && filteredProducts().length > 0) {
     <div class="products-grid container" role="list" aria-label="Product list">
-      @for (product of filteredProducts(); track product.id) {
+      @for (product of visibleProducts(); track product.id; let i = $index) {
         <div role="listitem">
-          <app-product-card [product]="product"></app-product-card>
+          <app-product-card [product]="product" [loadingMode]="i === 0 ? 'eager' : 'lazy'"></app-product-card>
         </div>
       }
     </div>
+    @if (visibleProducts().length < filteredProducts().length) {
+      <div class="load-more-wrap container">
+        <button class="btn-secondary" (click)="showMore()" aria-label="Load more products">
+          Load more products
+        </button>
+      </div>
+    }
   }
 
 </div>

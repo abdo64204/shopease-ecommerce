@@ -3,11 +3,11 @@
   <!-- Breadcrumb -->
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a routerLink="/products" class="breadcrumb-link">Products</a>
-    @if (product()) {
+    @if (product(); as item) {
       <span class="breadcrumb-sep" aria-hidden="true"> / </span>
-      <span class="breadcrumb-current">{{ product().category }}</span>
+      <span class="breadcrumb-current">{{ item.category }}</span>
       <span class="breadcrumb-sep" aria-hidden="true"> / </span>
-      <span class="breadcrumb-current">{{ product().title }}</span>
+      <span class="breadcrumb-current">{{ item.title }}</span>
     }
   </nav>
 
@@ -29,21 +29,22 @@
   }
 
   <!-- Product detail layout -->
-  @if (product() && !loading()) {
+  @if (product(); as item) {
+    @if (!loading()) {
     <div class="details-layout">
 
       <!-- Gallery -->
       <div class="gallery" aria-label="Product images">
         <div class="gallery-main">
           <img
-            [src]="selectedImage() ?? product().thumbnail"
-            [alt]="product().title"
+            [src]="selectedImage() ?? item.thumbnail"
+            [alt]="item.title"
             class="gallery-main-img"
           />
         </div>
-        @if (product().images && product().images.length > 1) {
+        @if (item.images && item.images.length > 1) {
           <div class="gallery-thumbs" role="list" aria-label="Product image thumbnails">
-            @for (img of product().images; track img; let i = $index) {
+            @for (img of item.images; track img; let i = $index) {
               <button
                 class="thumb-btn"
                 [class.thumb-active]="selectedImage() === img"
@@ -61,24 +62,24 @@
       <!-- Info panel -->
       <div class="info-panel">
         <!-- Badge + brand -->
-        @if (product().brand) {
-          <p class="info-brand">{{ product().brand }}</p>
+        @if (item.brand) {
+          <p class="info-brand">{{ item.brand }}</p>
         }
 
-        <h1 class="info-title">{{ product().title }}</h1>
-        <p class="info-desc">{{ product().description }}</p>
+        <h1 class="info-title">{{ item.title }}</h1>
+        <p class="info-desc">{{ item.description }}</p>
 
         <!-- Rating -->
-        @if (product().rating) {
-          <div class="info-rating" aria-label="Rating: {{ product().rating }} out of 5">
-            <span class="stars" aria-hidden="true">{{ getStars(product().rating) }}</span>
-            <span class="rating-num">{{ product().rating | number:'1.1-1' }}</span>
-            @if (product().stock !== undefined) {
+        @if (item.rating) {
+          <div class="info-rating" aria-label="Rating: {{ item.rating }} out of 5">
+            <span class="stars" aria-hidden="true">{{ getStars(item.rating) }}</span>
+            <span class="rating-num">{{ item.rating | number:'1.1-1' }}</span>
+            @if (item.stock !== undefined) {
               <span class="rating-sep" aria-hidden="true">·</span>
               <span class="rating-stock"
-                [class.in-stock]="product().stock > 0"
-                [class.out-stock]="product().stock === 0">
-                {{ product().stock > 0 ? '✓ In stock' : '✗ Out of stock' }}
+                [class.in-stock]="item.stock > 0"
+                [class.out-stock]="item.stock === 0">
+                {{ item.stock > 0 ? '✓ In stock' : '✗ Out of stock' }}
               </span>
             }
           </div>
@@ -86,9 +87,9 @@
 
         <!-- Price -->
         <div class="info-price-row">
-          <span class="info-price">\${{ product().price | number:'1.2-2' }}</span>
-          @if (product().discountPercentage && product().discountPercentage >= 5) {
-            <span class="badge badge-coral">-{{ product().discountPercentage | number:'1.0-0' }}% off</span>
+          <span class="info-price">\${{ item.price | number:'1.2-2' }}</span>
+          @if (item.discountPercentage && item.discountPercentage >= 5) {
+            <span class="badge badge-coral">-{{ item.discountPercentage | number:'1.0-0' }}% off</span>
           }
         </div>
 
@@ -97,8 +98,8 @@
           <button
             class="btn-primary add-to-cart"
             (click)="addToCart()"
-            [disabled]="product().stock === 0"
-            [attr.aria-label]="addedToCart() ? 'Added to cart!' : 'Add ' + product().title + ' to cart'">
+            [disabled]="item.stock === 0"
+            [attr.aria-label]="addedToCart() ? 'Added to cart!' : 'Add ' + item.title + ' to cart'">
             @if (addedToCart()) {
               ✓ Added to cart!
             } @else {
@@ -110,22 +111,22 @@
 
         <!-- Delivery info -->
         <div class="info-meta">
-          @if (product().shippingInformation) {
+          @if (item.shippingInformation) {
             <div class="meta-item">
               <span class="meta-icon" aria-hidden="true">🚚</span>
-              <span>{{ product().shippingInformation }}</span>
+              <span>{{ item.shippingInformation }}</span>
             </div>
           }
-          @if (product().returnPolicy) {
+          @if (item.returnPolicy) {
             <div class="meta-item">
               <span class="meta-icon" aria-hidden="true">↺</span>
-              <span>{{ product().returnPolicy }}</span>
+              <span>{{ item.returnPolicy }}</span>
             </div>
           }
-          @if (product().warrantyInformation) {
+          @if (item.warrantyInformation) {
             <div class="meta-item">
               <span class="meta-icon" aria-hidden="true">✦</span>
-              <span>{{ product().warrantyInformation }}</span>
+              <span>{{ item.warrantyInformation }}</span>
             </div>
           }
         </div>
@@ -133,11 +134,11 @@
         <hr class="divider"/>
 
         <!-- Highlights -->
-        @if (product().tags?.length) {
+        @if (item.tags?.length) {
           <div class="info-tags">
             <h2 class="info-section-title">Tags</h2>
             <div class="tags-row">
-              @for (tag of product().tags; track tag) {
+              @for (tag of item.tags; track tag) {
                 <span class="badge badge-action">{{ tag }}</span>
               }
             </div>
@@ -146,6 +147,7 @@
 
       </div>
     </div>
+    }
   }
 
 </div>
